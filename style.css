@@ -2,3 +2,148 @@
 /* Itens externos necessarios para o projeto*/
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+
+/*-----------------------------------------*/
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0, 0.7);
+    
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    animation: zoom 15s
+    
+    
+}
+
+@keyframes zoom {
+ 0%{
+     transform: scale(1.20)
+
+
+ }
+ 100%{
+     transform: scale(1)
+ }
+
+}
+
+.banner{
+    position: absolute;
+    top: 30%;
+    left:15%;
+
+
+
+}
+
+.banner h1{
+    color: white;
+    font-size: 3.5rem;
+    font-family:"baloo Da 2" ,serif;
+    font-weight:200;
+    text-shadow: 0.2rem 0.25rem 2px rgba(0,0,0, 0.4);
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: bannerMoveH1 1.5s forwards;
+    
+    
+    
+}
+
+@keyframes bannerMoveH1 {
+    0%{
+        transform: translateY(13rem) rotateY(-40deg)
+
+    }
+    90%{
+        font-size: 3.7rem;
+    }
+
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+
+    }
+}
+.banner p{
+    font-family:"Josefin Slab",serif;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.14rem 1.7px rgba(0,0,0, 0.4);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: bannerMovePB 1.5s 0.55s forwards;
+    
+}
+
+.banner button {
+    font-family:"Muli",serif;
+    font-size:1.1rem;
+    text-transform:uppercase;
+    letter-spacing:0.2rem;
+    color:white;
+    background: #834d9b;  /* caso o navegador seja antigo */
+    background: -webkit-linear-gradient(to left, #d04ed6, #834d9b);  
+    background: linear-gradient(to left, #d04ed6, #834d9b);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: bannerMovePB 1.5s 1s forwards;
+    
+    
+    
+}
+
+.banner button:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+    
+    
+    
+}
+
+@keyframes bannerMovePB {
+    0%{
+        transform: translateY(12rem) rotateY(-40deg)
+
+    }
+    90%{
+        font-size: 2.1rem;
+    }
+
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}

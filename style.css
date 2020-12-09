@@ -359,3 +359,56 @@ color: #555;
 
 
 }
+
+.sessao-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao-header h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: #727172;
+    border-bottom: solid 3px #834d9b;
+    margin-bottom: 2rem;
+}
+
+.conhecimento-header{
+    display: flex;
+    align-items: center;
+    color: #727172;
+    
+}
+.conhecimento-header i{
+   font-size:2.5rem;
+    
+}
+
+.conhecimento-header h3{
+    font-family: var(--font-secundary);
+    font-size:2rem;
+    padding-left: 0.5rem;
+     
+ }
+
+ .conhecimento-text{
+    font-family: var(--font-secundary);
+    
+    padding-top: 0.5rem;
+    text-align:justify
+     
+ }
+ .conhecimentos-img-wrapper{
+    grid-column:7/11;
+    grid-row: 3/6;
+    width: 100%;
+
+
+ }
+
+ .conhecimentos-img-wrapper img{
+     object-fit: cover;
+     width: 100%;
+   
+}

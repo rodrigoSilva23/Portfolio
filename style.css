@@ -246,6 +246,7 @@ header{
     right: -20rem;
     opacity: 0;
     transition: all 1s;
+    z-index: 1;
 
 }
 .show-menu .sidebar{
@@ -416,6 +417,7 @@ color: #555;
 /* css do section parte de Projetos */
 
 .projetos{
+    height: 100vh;
     display: flex;
     justify-content:space-evenly;
 }
@@ -453,6 +455,7 @@ color: #555;
     padding:2rem;
     text-shadow: 0 0.1rem 0.3rem rgba(0,0,0,.4);
     transition: all .5s;
+  
 
 }
 
@@ -496,4 +499,133 @@ color: #555;
     bottom: 2rem;
     opacity: 1 ;
     visibility: visible;
+}
+
+
+
+/* Css responsavel pela parte de contatos*/
+
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+
+    background-color:rgb(114, 113, 114)
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: .1rem .1rem 10rem    .1rem rgba(0,0,0,.9);
+}
+.contato-left{
+    width:35%;
+    background:
+    linear-gradient(rgba(15,15,15,0.5), rgba(22, 22, 22,0.8)),
+    url(img/contato.jpg);
+    background-size: cover;
+}
+.contato-right{
+    width:65%;
+    background-color: #eee;
+    padding:1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color:#272727;
+    font-size: 3rem;
+    font-weight:lighter;
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.input-group{
+    position: relative;
+}
+.input-group textarea{
+    max-width: 27rem;
+    max-height: 3rem;
+    
+}
+
+.field{
+    width: 100%;
+    border: none;
+    border-bottom: 0.15rem dashed;
+    margin-top: 2rem;
+    outline: none;
+    text-transform: uppercase;
+    font-family: var(--font-secundary);
+    background-color: transparent;
+  
+}
+
+.field:focus {
+    border-bottom: 0.15rem solid;
+    
+}
+
+
+.field-labal{
+    font-family: var(--font-secundary);
+   
+    position:absolute;
+    left: 0;
+    top: 0.7rem;
+    font-size:1.2rem;
+    transition:all 0.4s;
+    
+    
+
+
+}
+
+.field:focus ~.field-labal{
+    position:absolute;
+    left: 0;
+    top: 0rem;
+    
+}
+
+
+.btn-contato{
+    width: 7rem;
+    height:2rem;
+    background: #834d9b;  /* caso o navegador seja antigo */
+     background: -webkit-linear-gradient(to left, #d04ed6, #834d9b);  
+     background: linear-gradient(to left, #d04ed6, #834d9b);
+     font-family: var(--font-action);
+     font-size: 1.1rem;
+     text-transform: uppercase;
+     letter-spacing:0.1rem;
+     color: white;
+     border-radius: .3rem;
+     border:none;
+     cursor:pointer;
+     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.6);
+     margin-top: 1rem;
+     align-self: center;
+     
+
+}
+
+.btn-contato:hover{
+    width: 7.2rem;
+    height:2.2rem;
+    
+     
+
 }

@@ -3,3 +3,7 @@ document.querySelector(".hamburguer").addEventListener("click", ()=>{
     
 
 })
+
+function pegardataatual(){
+   now = new date().getfullYear();
+}

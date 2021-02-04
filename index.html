@@ -81,7 +81,7 @@
                 <div class="conhecimento">
                     <div class="conhecimento-header">
                         <i class="fas fa-pencil-alt"></i>
-                        <h3>Design</h3>
+                        <h3>ReactJS</h3>
                     </div>
                     <div class="conhecimento-text">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum hic eum rerum molestiae eveniet minima ex assumenda ad? Sunt eos necessitatibus inventore officia itaque temporibus tempore blanditiis dolor debitis dicta!</p>
@@ -192,7 +192,53 @@
 
                 </div>
             </div>
+        </section>  
+
+        <section class="sessao-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form >
+                    <label for="qtde">Qtde de Páginas</label>
+                    <input type="number" min="1"  name="qtde" id="qtde">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label >Layout</label>
+                    <div class="group-layout">
+                       <div>
+                           <input type="radio" name="layout" id="layout-sim">
+                           <label for="layout-sim" >Preciso de  um layout</label>
+                       </div>
+                       <div>
+                           <input type="radio" name="layout" id="layout-nao">
+                           <label for="layout-nao" >Já tenho um layout</label>
+                       </div> 
+                       
+                       
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button type="submit" class="btn-orcamento">Enviar</button>
+                </form>
+            </div>
+
         </section>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 
+                    <span >
+                        <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                        RodrigoSilva - Todos os direitos reservados
+                    </span>
+                </p>
+                <div class="social-list">
+                    <ul class="li"><a href=""><i class="fa"></i></a></ul>
+                    <ul class="li"><a href=""><i class="fa"></i></a></ul>
+                    <ul class="li"><a href=""><i class="fa"></i></a></ul>
+                </div>
+                
+            </div>
+        </footer>
 
 
 

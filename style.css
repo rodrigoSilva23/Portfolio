@@ -311,7 +311,12 @@ color: #555;
 }
 
 
-/* css do section parte de conhecimentos */
+/*-----------------------------------Fim--------------------------------------*/
+
+
+
+
+/*--------------------- css do section parte de conhecimentos -----------------*/
 
 
 .conhecimentos{
@@ -413,8 +418,12 @@ color: #555;
      width: 100%;
    
 }
+/*-----------------------------------Fim--------------------------------------*/
 
-/* css do section parte de Projetos */
+
+
+
+/*---------------- css do section parte de Projetos ---------------------------*/
 
 .projetos{
     height: 100vh;
@@ -500,10 +509,11 @@ color: #555;
     opacity: 1 ;
     visibility: visible;
 }
+/*-----------------------------------Fim--------------------------------------*/
 
 
 
-/* Css responsavel pela parte de contatos*/
+/*-------------------- Css responsavel pela parte de contatos-----------------*/
 
 
 .sessao-contato{
@@ -626,6 +636,97 @@ color: #555;
     width: 7.2rem;
     height:2.2rem;
     
+     
+
+}
+
+/*-----------------------------------Fim--------------------------------------*/
+
+
+/*---------------------------------orçamento-----------------------------------*/
+
+.sessao-orcamento{
+    width: 100%;
+    height: 102vh;
+    background: url(./img/bg-orcamento.jpg);
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 80%;
+    background-color:#ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,8);
+    position: relative;
+    
+
+}
+.sessao-orcamento h1{
+    position: absolute;
+    top:-2.5rem;
+    left: 2rem;
+    border-radius: 8px;
+    padding:0 3rem;
+    background: #834d9b;  /* caso o navegador seja antigo */
+    background: -webkit-linear-gradient(to left, #d04ed6, #834d9b);  
+    background: linear-gradient(to left, #d04ed6, #834d9b);
+    color: white;
+    font-size:3rem;
+    font-weight: lighter;
+    font-family:var(--font-primary);
+    box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.5);
+
+    
+
+
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    
+
+}
+
+.sessao-orcamento label{
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-secundary);
+    width: 4rem;
+    font-size:2rem;
+    outline: none;
+    border-radius: 10px;
+    border:none;
+    
+}
+.btn-orcamento{
+   padding:1rem;
+    background: #834d9b;  /* caso o navegador seja antigo */
+     background: -webkit-linear-gradient(to left, #d04ed6, #834d9b);  
+     background: linear-gradient(to left, #d04ed6, #834d9b);
+     font-family: var(--font-action);
+     font-size: 1.1rem;
+     text-transform: uppercase;
+     letter-spacing:0.1rem;
+     color: white;
+     border-radius: .3rem;
+     border:none;
+     cursor:pointer;
+     box-shadow: 0 .1rem .8rem rgba(0, 0, 0, 0.6);
+     margin-top: 1rem;
+     grid-column: 2;
      
 
 }
